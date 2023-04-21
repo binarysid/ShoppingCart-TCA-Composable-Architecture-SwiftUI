@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060E531529F12A2700D4A256 /* ProductReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060E531429F12A2700D4A256 /* ProductReducer.swift */; };
 		061EB17C29F0061100C9F422 /* ShoppingCartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB17B29F0061100C9F422 /* ShoppingCartApp.swift */; };
-		061EB17E29F0061100C9F422 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB17D29F0061100C9F422 /* ContentView.swift */; };
 		061EB18029F0061300C9F422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061EB17F29F0061300C9F422 /* Assets.xcassets */; };
 		061EB18329F0061300C9F422 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061EB18229F0061300C9F422 /* Preview Assets.xcassets */; };
 		061EB18D29F0061400C9F422 /* ShoppingCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB18C29F0061400C9F422 /* ShoppingCartTests.swift */; };
 		061EB19729F0061400C9F422 /* ShoppingCartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB19629F0061400C9F422 /* ShoppingCartUITests.swift */; };
 		061EB19929F0061400C9F422 /* ShoppingCartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB19829F0061400C9F422 /* ShoppingCartUITestsLaunchTests.swift */; };
+		061EB1A729F0074300C9F422 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 061EB1A629F0074300C9F422 /* ComposableArchitecture */; };
+		061EB1A929F0156400C9F422 /* AddToCartReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB1A829F0156400C9F422 /* AddToCartReducer.swift */; };
+		061EB1AB29F0168E00C9F422 /* PlusMinusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB1AA29F0168E00C9F422 /* PlusMinusButton.swift */; };
+		061EB1AF29F017AA00C9F422 /* AddToCartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB1AE29F017AA00C9F422 /* AddToCartButton.swift */; };
+		061EB1B129F01B4500C9F422 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 061EB1B029F01B4500C9F422 /* products.json */; };
+		061EB1B329F01C9700C9F422 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061EB1B229F01C9700C9F422 /* ProductData.swift */; };
+		06FB25E629F0553D001D5B34 /* MockDataBuilder in Frameworks */ = {isa = PBXBuildFile; productRef = 06FB25E529F0553D001D5B34 /* MockDataBuilder */; };
+		06FCD3B829F198F9003394C4 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FCD3B729F198F9003394C4 /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060E531429F12A2700D4A256 /* ProductReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductReducer.swift; sourceTree = "<group>"; };
 		061EB17829F0061100C9F422 /* ShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		061EB17B29F0061100C9F422 /* ShoppingCartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartApp.swift; sourceTree = "<group>"; };
-		061EB17D29F0061100C9F422 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		061EB17F29F0061300C9F422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		061EB18229F0061300C9F422 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		061EB18829F0061400C9F422 /* ShoppingCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +52,12 @@
 		061EB19229F0061400C9F422 /* ShoppingCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		061EB19629F0061400C9F422 /* ShoppingCartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartUITests.swift; sourceTree = "<group>"; };
 		061EB19829F0061400C9F422 /* ShoppingCartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		061EB1A829F0156400C9F422 /* AddToCartReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartReducer.swift; sourceTree = "<group>"; };
+		061EB1AA29F0168E00C9F422 /* PlusMinusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusMinusButton.swift; sourceTree = "<group>"; };
+		061EB1AE29F017AA00C9F422 /* AddToCartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartButton.swift; sourceTree = "<group>"; };
+		061EB1B029F01B4500C9F422 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		061EB1B229F01C9700C9F422 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
+		06FCD3B729F198F9003394C4 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FB25E629F0553D001D5B34 /* MockDataBuilder in Frameworks */,
+				061EB1A729F0074300C9F422 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +110,9 @@
 		061EB17A29F0061100C9F422 /* ShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
-				061EB17B29F0061100C9F422 /* ShoppingCartApp.swift */,
-				061EB17D29F0061100C9F422 /* ContentView.swift */,
-				061EB17F29F0061300C9F422 /* Assets.xcassets */,
+				069BF6E229F2F74500CDA789 /* Domain */,
+				069BF6E529F2F7A400CDA789 /* Main */,
+				069BF6E629F2F7BE00CDA789 /* Resources */,
 				061EB18129F0061300C9F422 /* Preview Content */,
 			);
 			path = ShoppingCart;
@@ -127,6 +143,52 @@
 			path = ShoppingCartUITests;
 			sourceTree = "<group>";
 		};
+		069BF6E229F2F74500CDA789 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				069BF6E429F2F76F00CDA789 /* Products */,
+				069BF6E329F2F74D00CDA789 /* AddToCart */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		069BF6E329F2F74D00CDA789 /* AddToCart */ = {
+			isa = PBXGroup;
+			children = (
+				061EB1A829F0156400C9F422 /* AddToCartReducer.swift */,
+				061EB1AE29F017AA00C9F422 /* AddToCartButton.swift */,
+				061EB1AA29F0168E00C9F422 /* PlusMinusButton.swift */,
+			);
+			path = AddToCart;
+			sourceTree = "<group>";
+		};
+		069BF6E429F2F76F00CDA789 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				060E531429F12A2700D4A256 /* ProductReducer.swift */,
+				06FCD3B729F198F9003394C4 /* ProductCell.swift */,
+				061EB1B229F01C9700C9F422 /* ProductData.swift */,
+				061EB1B029F01B4500C9F422 /* products.json */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		069BF6E529F2F7A400CDA789 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				061EB17B29F0061100C9F422 /* ShoppingCartApp.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		069BF6E629F2F7BE00CDA789 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				061EB17F29F0061300C9F422 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +205,10 @@
 			dependencies = (
 			);
 			name = ShoppingCart;
+			packageProductDependencies = (
+				061EB1A629F0074300C9F422 /* ComposableArchitecture */,
+				06FB25E529F0553D001D5B34 /* MockDataBuilder */,
+			);
 			productName = ShoppingCart;
 			productReference = 061EB17829F0061100C9F422 /* ShoppingCart.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +281,10 @@
 				Base,
 			);
 			mainGroup = 061EB16F29F0061100C9F422;
+			packageReferences = (
+				061EB1A529F0074300C9F422 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				06FB25E429F0553D001D5B34 /* XCRemoteSwiftPackageReference "MockDataBuilder" */,
+			);
 			productRefGroup = 061EB17929F0061100C9F422 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				061EB1B129F01B4500C9F422 /* products.json in Resources */,
 				061EB18329F0061300C9F422 /* Preview Assets.xcassets in Resources */,
 				061EB18029F0061300C9F422 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061EB17E29F0061100C9F422 /* ContentView.swift in Sources */,
+				061EB1AB29F0168E00C9F422 /* PlusMinusButton.swift in Sources */,
+				061EB1A929F0156400C9F422 /* AddToCartReducer.swift in Sources */,
 				061EB17C29F0061100C9F422 /* ShoppingCartApp.swift in Sources */,
+				061EB1AF29F017AA00C9F422 /* AddToCartButton.swift in Sources */,
+				06FCD3B829F198F9003394C4 /* ProductCell.swift in Sources */,
+				061EB1B329F01C9700C9F422 /* ProductData.swift in Sources */,
+				060E531529F12A2700D4A256 /* ProductReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +659,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		061EB1A529F0074300C9F422 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		06FB25E429F0553D001D5B34 /* XCRemoteSwiftPackageReference "MockDataBuilder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/binarysid/MockDataBuilder";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		061EB1A629F0074300C9F422 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 061EB1A529F0074300C9F422 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		06FB25E529F0553D001D5B34 /* MockDataBuilder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06FB25E429F0553D001D5B34 /* XCRemoteSwiftPackageReference "MockDataBuilder" */;
+			productName = MockDataBuilder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 061EB17029F0061100C9F422 /* Project object */;
 }

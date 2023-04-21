@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct ShoppingCartApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            AddToCartButton(store: Store(initialState: AddToCartReducer.State(), reducer: AddToCartReducer()))
         }
     }
 }

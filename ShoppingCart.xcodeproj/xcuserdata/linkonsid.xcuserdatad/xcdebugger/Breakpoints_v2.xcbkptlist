@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "4906FFE4-F1B8-47E9-99CF-ED2A4B88C96B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57B1FBC0-70E5-45C0-A608-86273BDC224C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../../../../Users/linkonsid/Library/Developer/Xcode/DerivedData/ShoppingCart-gthcnyydhwlqgagnetpcndlpwmxb/SourcePackages/checkouts/MockDataBuilder/Sources/MockDataBuilder/MockDataBuilder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "buildFrom(bundle:resource:extensions:type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
