@@ -11,7 +11,7 @@ import ComposableArchitecture
 struct PlusMinusButton: View {
     let store: StoreOf<AddToCartReducer>
     var body: some View {
-        WithViewStore(self.store) { viewStore in
+        WithViewStore(self.store) { (viewStore: ViewStoreOf<AddToCartReducer>) in // explicitly specify the type of the view store improves the compiler’s ability to type-check the view resulting in a improved compile time for large project with complex views
             VStack {
                 Text("\(viewStore.counter)")
                 HStack {

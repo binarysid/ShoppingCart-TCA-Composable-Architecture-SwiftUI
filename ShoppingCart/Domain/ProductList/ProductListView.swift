@@ -13,7 +13,7 @@ struct ProductListView: View {
     let store: StoreOf<ProductListReducer>
 
     var body: some View {
-        WithViewStore(self.store) { viewStore in
+        WithViewStore(self.store) { (viewStore: ViewStoreOf<ProductListReducer>) in // explicitly specify the type of the view store improves the compiler’s ability to type-check the view resulting in a improved compile time for large project with complex views
             List {
                 ForEachStore(
                     self.store.scope(state: \.products, action: ProductListReducer.Action.product(id:action:)

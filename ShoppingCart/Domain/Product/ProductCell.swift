@@ -12,7 +12,7 @@ import MockDataBuilder
 struct ProductCell: View {
     let store: StoreOf<ProductReducer>
     var body: some View {
-        WithViewStore(self.store) { viewStore in
+        WithViewStore(self.store) { (viewStore: ViewStoreOf<ProductReducer>) in // explicitly specify the type of the view store improves the compiler’s ability to type-check the view resulting in a improved compile time for large project with complex views
             HStack {
                 Text("Total price: $\(viewStore.totalPrice)")
                 VStack{
