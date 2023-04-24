@@ -13,7 +13,7 @@ struct ShoppingCartApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            AddToCartButton(store: Store(initialState: AddToCartReducer.State(), reducer: AddToCartReducer()))
+            ProductListView(store: Store(initialState: ProductListReducer.State(), reducer: ProductListReducer()))
         }
     }
 }

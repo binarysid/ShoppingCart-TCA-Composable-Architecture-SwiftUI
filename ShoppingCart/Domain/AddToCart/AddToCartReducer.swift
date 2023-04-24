@@ -27,27 +27,4 @@ struct AddToCartReducer: ReducerProtocol {
         case didTapPlus
         case didTapMinus
     }
-
-}
-
-struct ParentReducer: ReducerProtocol {
-    func reduce(into state: inout State, action: Action) -> ComposableArchitecture.EffectTask<Action> {
-        switch action {
-        case .send:
-            state.title = "sent"
-            return .none
-        case .fetch:
-            state.title = "fetched"
-            return .none
-        }
-    }
-    
-    struct State: Equatable {
-        var title = ""
-    }
-
-    enum Action: Equatable {
-        case send
-        case fetch
-    }
 }

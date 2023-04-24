@@ -16,7 +16,7 @@ struct ProductData: Codable {
 struct Product: Codable, Equatable {
     let id: Int
     let title, description: String
-    let price: Int
+    let price: Double
     let discountPercentage, rating: Double
     let stock: Int
     let brand, category: String

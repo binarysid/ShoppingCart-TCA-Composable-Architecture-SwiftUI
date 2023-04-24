@@ -20,6 +20,7 @@ struct PlusMinusButton: View {
                     } label: {
                         Text("+")
                     }
+                    Spacer()
                     Button {
                         viewStore.send(.didTapMinus)
                     } label: {

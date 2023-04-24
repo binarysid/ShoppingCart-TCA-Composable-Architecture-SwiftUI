@@ -14,6 +14,7 @@ struct ProductCell: View {
     var body: some View {
         WithViewStore(self.store) { viewStore in
             HStack {
+                Text("Total price: $\(viewStore.totalPrice)")
                 VStack{
                     Text("\(viewStore.product.title)")
                     Text("\(viewStore.product.description)")
@@ -27,6 +28,6 @@ struct ProductCell: View {
 struct ProductCell_Previews: PreviewProvider {
     static let productData = MockDataBuilder.buildFrom(bundle: .main, resource: "products", extensions: "json", type: ProductData.self)!
     static var previews: some View {
-        ProductCell(store: Store(initialState: ProductReducer.State(product: productData.products.first!), reducer: ProductReducer()))
+        ProductCell(store: Store(initialState: ProductReducer.State(id: UUID(), product: productData.products.first!), reducer: ProductReducer()))
     }
 }
