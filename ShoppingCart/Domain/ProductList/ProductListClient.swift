@@ -7,6 +7,7 @@
 
 import ComposableArchitecture
 import WebService
+import MockDataBuilder
 
 struct ProductListClient {
     var fetch: @Sendable () async throws -> [Product]
@@ -20,7 +21,12 @@ private enum ProductListClientKey: DependencyKey {
             return products
         }
     )
-//    static var testValue: ProductListClient
+    static var testValue = ProductListClient(
+        fetch: {
+            guard let data = MockDataBuilder.buildFrom(bundle: .main, resource: "products", extensions: "json", type: ProductData.self) else { return [] }
+            return data.products
+        }
+    )
 }
 
 extension DependencyValues {
